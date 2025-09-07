@@ -1,0 +1,124 @@
+:root {
+  /* Light Theme (Default) */
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-primary: #2563eb;
+  --color-secondary: #64748b;
+  --color-accent: #f59e0b;
+  --border-radius: 0.5rem;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --color-background: #1e293b;
+  --color-text: #f1f5f9;
+  --color-primary: #3b82f6;
+  --color-secondary: #94a3b8;
+  --color-accent: #f59e0b;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: sans-serif;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.showcase section {
+  margin-bottom: 3rem;
+}
+
+.component-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Button Components */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* Card Component */
+.card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Components */
+.input {
+  padding: 0.75rem;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100%;
+  max-width: 300px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* Alert Components */
+.alert {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  max-width: 400px;
+}
+
+.alert-success {
+  background-color: #10b981;
+  color: white;
+}
+
+.alert-error {
+  background-color: #ef4444;
+  color: white;
+}
+
+.alert-warning {
+  background-color: #f59e0b;
+  color: white;
+}

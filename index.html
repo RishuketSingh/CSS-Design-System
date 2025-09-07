@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Design System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>My Design System</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main class="showcase">
+        <!-- Buttons Section -->
+        <section id="buttons">
+            <h2>Buttons</h2>
+            <div class="component-grid">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-accent">Accent Button</button>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="cards">
+            <h2>Cards</h2>
+            <div class="component-grid">
+                <div class="card">
+                    <h3>Card Title</h3>
+                    <p>This is a sample card component. It can hold various content.</p>
+                    <button class="btn btn-primary">Card Button</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inputs Section -->
+        <section id="inputs">
+            <h2>Input Fields</h2>
+            <div class="component-grid">
+                <div>
+                    <label for="text-input">Text Input</label>
+                    <input type="text" id="text-input" class="input" placeholder="Enter text here">
+                </div>
+                <div>
+                    <label for="email-input">Email Input</label>
+                    <input type="email" id="email-input" class="input" placeholder="email@example.com">
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Section -->
+        <section id="alerts">
+            <h2>Alert Messages</h2>
+            <div class="component-grid">
+                <div class="alert alert-success">This is a success message!</div>
+                <div class="alert alert-error">This is an error message!</div>
+                <div class="alert alert-warning">This is a warning message!</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
